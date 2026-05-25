@@ -8,7 +8,7 @@ export const CommentList = ({ comments }) => {
         <div data-cy="NoCommentsMessage">No comments yet</div>
       )}
       {comments.map(comment => (
-        <CommentInfo key={comment.id} comment={comment} />
+        <CommentInfo comment={comment} />
       ))}
     </div>
   );
